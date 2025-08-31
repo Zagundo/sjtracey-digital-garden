@@ -31,6 +31,9 @@ collections:
   notes:
     output: true
     permalink: /:slug
+  ramble:
+    output: true
+    permalink: /ramble/:name/
 
 defaults:
   - scope:
@@ -41,3 +44,10 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+  - scope:
+      path: ""
+      type: ramble
+    values:
+      layout: default
+
+  
